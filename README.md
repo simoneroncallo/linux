@@ -1,2 +1,2 @@
-# debian
-Minimal Debian configuration.
+# linux
+Minimal configuration.

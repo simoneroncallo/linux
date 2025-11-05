@@ -17,12 +17,12 @@ apt upgrade -y
 apt autoremove --purge -y
 
 # Packages
-TOOLS=(tree tmux htop bpytop fastfetch cmatrix)
+BASIC=(tree tmux htop bpytop fastfetch)
 SECURITY=(ufw apparmor apparmor-utils auditd lynis)
 CODE=(python3 python3-venv)
 DEVOPS=(docker.io gnome-boxes)
 
-PCKGS=("${TOOLS[@]}" "${SECURITY[@]}" "${CODE[@]}" "${DEVOPS[@]}")
+PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${DEVOPS[@]}")
 
 apt install -y "${PCKGS[@]}"
 
