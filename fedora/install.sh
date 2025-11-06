@@ -17,10 +17,10 @@ dnf upgrade --refresh
 # Packages
 BASIC=(tree tmux htop fastfetch)
 SECURITY=(firewall-config lynis)
-CODE=(python3 python3-virtualenv)
-DEVOPS=(gnome-boxes)
+CODE=(python3)
+TOOLS=(inkscape gimp gnome-boxes)
 
-PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${DEVOPS[@]}")
+PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${TOOLS[@]}")
 
 dnf install "${PCKGS[@]}"
 dnf autoremove
