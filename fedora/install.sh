@@ -24,6 +24,6 @@ PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${DEVOPS[@]}")
 
 dnf install "${PCKGS[@]}"
 dnf autoremove
-dnf clean
+dnf clean all
 
 echo "Completed."
