@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# ========================================================================
+#
+# Script Name: install.sh
+# Author: Simone Roncallo
+# Description: Personal configuration for a Fedora installation.
+# Requirements: Fedora, dnf, sudo
+# Instructions: Run with sudo
+#
+# ========================================================================
+
+set -e
+
+dnf upgrade --refresh
+
+# Packages
+BASIC=(tree tmux htop fastfetch)
+SECURITY=(firewall-config lynis)
+CODE=(python3 python3-virtualenv)
+DEVOPS=(gnome-boxes)
+
+PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${DEVOPS[@]}")
+
+dnf install "${PCKGS[@]}"
+dnf autoremove
+dnf clean
+
+echo "Completed."
