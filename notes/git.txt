@@ -1,12 +1,12 @@
 # git
-git config --global user.name "Name"
-git config --global user.email "you@example.com"
+git config --global user.name "username" # Username
+git config --global user.email "you@example.com" # Email
 
-git clone https://github.com//<username>/<name>.git
+git clone https://github.com//<username>/<name>.git # Clone public repository
 cd <name>
 
-git add . # Stage
 git status
+git add . # Stage
 git diff --cached # Diff
 git commit -m "Message" # Commit
 git push origin main # Push

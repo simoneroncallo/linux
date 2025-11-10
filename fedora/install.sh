@@ -4,7 +4,7 @@
 #
 # Script Name: install.sh
 # Author: Simone Roncallo
-# Description: Personal configuration for a Fedora installation.
+# Description: Personal configuration for a Fedora installation
 # Requirements: Fedora, dnf, sudo
 # Instructions: Run with sudo
 #
