@@ -14,19 +14,20 @@
 TIMESTAMP=$(date +%F_%H-%M-%S)
 
 # Directories
-SRC=/home/
-ROOT=/run/media/<user>/Backup
+USER=<user>
+SRC="/home/${USER}/"
+ROOT="/run/media/${USER}/Backup"
 
-DST="${ROOT}/home"
+DST="${ROOT}/${USER}"
 DIR="${ROOT}/history/$TIMESTAMP"
 LOG="${ROOT}/history/$TIMESTAMP.txt"
 mkdir -p "$DST"
 mkdir -p "$DIR"
 
 # Test
-rsync -avP --dry-run --delete --backup --backup-dir="$DIR" "$SRC" "$DST" --log-file="$LOG"
+rsync -avP --dry-run --delete --backup --backup-dir="$DIR" --exclude-from=./.rsyncignore "$SRC" "$DST" --log-file="$LOG"
 
-# Backup
-# rsync -avP --delete --backup --backup-dir="$DIR" "$SRC" "$DST" --log-file="$LOG"
+# Run
+#rsync -avP --delete --backup --backup-dir="$DIR" --exclude-from=./rsyncignore "$SRC" "$DST" --log-file="$LOG"
 
 echo "Completed."
