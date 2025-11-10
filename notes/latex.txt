@@ -1,0 +1,3 @@
+# latexmk
+latexmk -pdf <document.tex> # Compile LaTeX document
+latexmk -c # Clean auxiliary files

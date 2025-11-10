@@ -22,6 +22,9 @@ TOOLS=(inkscape gimp gnome-boxes)
 
 PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${TOOLS[@]}")
 
+# LaTeX
+# dnf install texlive-scheme-full
+
 dnf install "${PCKGS[@]}"
 dnf autoremove
 dnf clean all
