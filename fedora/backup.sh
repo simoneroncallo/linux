@@ -25,7 +25,7 @@ mkdir -p "$DST"
 mkdir -p "$DIR"
 
 # Test
-rsync -avP --dry-run --delete --backup --backup-dir="$DIR" --exclude-from=./.rsyncignore "$SRC" "$DST" --log-file="$LOG"
+rsync -avP --dry-run --delete --backup --backup-dir="$DIR" --exclude-from=./rsyncignore "$SRC" "$DST" --log-file="$LOG"
 
 # Run
 #rsync -avP --delete --backup --backup-dir="$DIR" --exclude-from=./rsyncignore "$SRC" "$DST" --log-file="$LOG"
