@@ -15,12 +15,17 @@ set -e
 dnf upgrade --refresh
 
 # Packages
-BASIC=(tree tmux htop fastfetch)
+BASIC=(tree tmux micro htop fastfetch)
 SECURITY=(firewall-config lynis)
 CODE=(python3)
 TOOLS=(inkscape gimp gnome-boxes)
 
-PCKGS=("${BASIC[@]}" "${SECURITY[@]}" "${CODE[@]}" "${TOOLS[@]}")
+PCKGS=(\
+	"${BASIC[@]}" \
+	"${SECURITY[@]}" \
+	"${CODE[@]}" \
+	"${TOOLS[@]}"\
+	)
 
 # LaTeX
 # dnf install texlive-scheme-full
