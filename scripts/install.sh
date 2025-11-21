@@ -17,7 +17,7 @@ dnf upgrade --refresh
 # Packages
 BASIC=(tree tmux micro htop fastfetch)
 SECURITY=(firewall-config lynis)
-CODE=(python3)
+CODE=(python3 gcc-c++)
 TOOLS=(inkscape gimp gnome-boxes)
 
 PCKGS=(\
