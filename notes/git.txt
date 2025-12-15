@@ -21,7 +21,10 @@ git switch -c <branch> # Create branch
 
 git branch # Local branches
 git branch -r # Remote branches
-git branch <branch> -d # Delete branch
+git branch -d <branch> -d Delete branch
+
+git commit --amend # Update last commit
+git push --force-with-lease origin branch-name # Force push
 
 git fetch -p origin # Prune deleted branches 
 git diff --cached # View changes
