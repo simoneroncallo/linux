@@ -1,2 +1,2 @@
 # Linux
-Minimal configuration for Debian and Fedora.
+Minimal configuration and scripts for Debian and Fedora.
