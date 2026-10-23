@@ -4,7 +4,7 @@ git config --global user.email "you@example.com" # Set email address
 
 git clone https://github.com//<username>/<repo>.git # Clone repository
 git status # Show modified/staged files
-git log --graph --full-history --all # Print graphical history of the repository
+git log --oneline --graph --decorate --all # Print graphical log 
 
 # push
 git add . # Stage changes
@@ -31,7 +31,7 @@ git fetch -p origin # Prune deleted branches
 git diff --cached # View changes
 
 git restore <file> # Restore file
-git merge <branch> # Merge branch
+git merge <branch> # Merge target branch into the current one
 git checkout <branch> -- <path> # Selective merge from branch
 git reset --soft HEAD~1 # Unstage last commit
 git reset --soft HEAD~n # Unstage n-last commit
